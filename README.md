@@ -30,7 +30,7 @@ O projeto foi desenvolvido com HTML e CSS puro, utilizando boas práticas de des
 
 ## 🔄 Fluxo do Projeto
 
-O projeto segue uma estrutura hierárquica clara, com um container principal que organiza todas as seções. Abaixo está o diagrama de fluxo que ilustra a organização dos componentes:
+O projeto segue uma estrutura hierárquica clara, com um container principal que organiza todas as seções. Fluxo normal:
 
 ```mermaid
 graph TD
