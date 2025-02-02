@@ -24,9 +24,41 @@ O projeto foi desenvolvido com HTML e CSS puro, utilizando boas práticas de des
 <div align="center">
 
 [<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />](https://www.figma.com/design/1555H6SjqiLA95qgu6g36k/Local-Tur%C3%ADstico?node-id=3-376&t=sUm3asoEzLaIBaCx-1)
-[<img src="https://img.shields.io/badge/Ver%20Site-1572B6?style=for-the-badge&logo=google-chrome&logoColor=white" />](SEU_LINK_DO_SITE_AQUI)
+[<img src="https://img.shields.io/badge/Ver%20Site-1572B6?style=for-the-badge&logo=google-chrome&logoColor=white" />](https://dvizioon.github.io/LOCAL-TURISTICO/)
 
 </div>
+
+## 🔄 Fluxo do Projeto
+
+O projeto segue uma estrutura hierárquica clara, com um container principal que organiza todas as seções. Abaixo está o diagrama de fluxo que ilustra a organização dos componentes:
+
+```mermaid
+graph TD
+    A[Container Principal] --> B[Header - Conheça Busan]
+    A --> C[Destinos Turísticos]
+    A --> D[Footer]
+
+    B --> B1[Título]
+    B --> B2[Imagem Principal]
+    B --> B3[Descrição Introdutória]
+    
+    C --> C1[Card Haedong Yonggungsa]
+    C --> C2[Card Templo Beomeo-sa]
+    C --> C3[Card Parque Yongdusan]
+    
+    subgraph Estrutura do Card
+        C1 --> E1[Imagem]
+        C1 --> E2[Título]
+        C1 --> E3[Descrição]
+        C1 --> E4[Lista de Categorias]
+        E4 --> F1[História]
+        E4 --> F2[Famílias]
+        E4 --> F3[Orçamento]
+    end
+    
+    D --> D1[Texto Final]
+    D --> D2[Assinatura + Ícone]
+```
 
 ## 🎨 Style Guide
 
@@ -130,6 +162,8 @@ cd LOCAL-TURISTICO
 
 ![Screenshot do Projeto](./screenshots/01.png)
 
+![Screenshot do Projeto](./screenshots/02.png)
+
 ## 📝 Autor
 
 Desenvolvido com 💙 por Dvizioon
@@ -138,6 +172,5 @@ Desenvolvido com 💙 por Dvizioon
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
----
 
-*Este projeto é uma landing page demonstrativa criada para fins educacionais e de portfolio.*
+
